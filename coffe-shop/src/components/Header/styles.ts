@@ -7,6 +7,7 @@ export const HeaderContainer = styled.header`
   width: 100%;
   z-index: 999;
   height: 6.5rem;
+  background-color: ${props => props.theme['white']};
 
   nav {
     display: flex;
