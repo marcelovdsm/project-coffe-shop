@@ -87,11 +87,11 @@ export const CoffeeIconComponent = styled.i`
   background-color: ${(props) => props.theme.purple};
 `
 
-export const CoffeeList = styled.div`
+export const CoffeeListHeader = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 3.5rem 10rem 10rem 10rem;
+  padding: 3.5rem 10rem 0 10rem;
 
   h2 {
     font-family: 'Baloo 2', sans-serif;
@@ -117,4 +117,14 @@ export const Filter = styled.p`
     background-color: ${(props) => props.theme.yellowDark};
     color: ${(props) => props.theme.white};
   }
+`
+export const CoffeeList = styled.div`
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 90rem;
+  height: 85rem;
+  padding: 0 10rem 0 10rem;
+  margin-top: -32rem;
 `
