@@ -12,7 +12,7 @@ import {
   Filter,
   CoffeeListHeader,
 } from './styles'
-import expresso from '../../assets/expresso.jpg'
+import expresso from '../../assets/expresso.png'
 import CoffeIntroImage from '../../assets/coffe-intro.jpg'
 import { Coffee, Package, ShoppingCart, Timer } from 'phosphor-react'
 import { CoffeeCard } from '../../components/CoffeeCard'

@@ -1,10 +1,10 @@
 import { useState } from 'react'
 import { Cart } from '../../Pages/Cart'
-import { CoffeeCardContainer } from './styles'
+import { CardCategory, CardImage, CoffeeCardContainer } from './styles'
 
 interface CoffeeCardProps {
   img: string
-  coffeeType: string
+  coffeeType: Array<String>
   coffeeName: string
   coffeeDescription: string
 }
@@ -20,8 +20,10 @@ export const CoffeeCard = ({ coffeeCardInfo }: Props) => {
     <CoffeeCardContainer>
       {coffeeCardInfo.map((coffee, index) => (
         <div key={index}>
-          <img src={coffee.img} alt="Coffee Image" />
-          <span>{coffee.coffeeType}</span>
+          <CardImage src={coffee.img} alt="Coffee Image" />
+          if (coffeeType) {
+            return 
+          }
           <h1>{coffee.coffeeName}</h1>
           <p>{coffee.coffeeDescription}</p>
           <footer>
