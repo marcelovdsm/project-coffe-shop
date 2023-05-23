@@ -7,7 +7,7 @@ export const CoffeeCardContainer = styled.div`
   align-items: center;
   width: 16rem;
   height: 19.375rem;
-  background-color: ${props => props.theme.baseCard};
+  background-color: ${(props) => props.theme.baseCard};
   border-radius: 6px 36px;
 `
 
@@ -26,4 +26,10 @@ export const CardCategory = styled.span`
   padding: 0.375rem 0.75rem;
   border-radius: 100px;
   transition: 0.2s;
+`
+
+export const CardCategoryDiv = styled.div`
+  display: flex;
+  gap: 0.25rem;
+  justify-content: center;
 `

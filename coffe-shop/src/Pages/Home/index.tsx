@@ -75,160 +75,160 @@ export const Home = () => {
       </CoffeeListHeader>
 
       <CoffeeList>
-      <CoffeeCard
-        coffeeCardInfo={[
-          {
-            img: expresso,
-            coffeeType: ['TRADICIONAL', 'GELADO'],
-            coffeeName: 'Expresso Tradicional',
-            coffeeDescription:
-              'O tradicional café feito com água quente e grãos moídos',
-          },
-        ]}
-      />
-      <CoffeeCard
-        coffeeCardInfo={[
-          {
-            img: expresso,
-            coffeeType: ['TRADICIONAL'],
-            coffeeName: 'Expresso Tradicional',
-            coffeeDescription:
-              'O tradicional café feito com água quente e grãos moídos',
-          },
-        ]}
-      />
-      <CoffeeCard
-        coffeeCardInfo={[
-          {
-            img: expresso,
-            coffeeType: ['TRADICIONAL'],
-            coffeeName: 'Expresso Tradicional',
-            coffeeDescription:
-              'O tradicional café feito com água quente e grãos moídos',
-          },
-        ]}
-      />
-      <CoffeeCard
-        coffeeCardInfo={[
-          {
-            img: expresso,
-            coffeeType: ['TRADICIONAL'],
-            coffeeName: 'Expresso Tradicional',
-            coffeeDescription:
-              'O tradicional café feito com água quente e grãos moídos',
-          },
-        ]}
-      />
-      <CoffeeCard
-        coffeeCardInfo={[
-          {
-            img: expresso,
-            coffeeType: ['TRADICIONAL'],
-            coffeeName: 'Expresso Tradicional',
-            coffeeDescription:
-              'O tradicional café feito com água quente e grãos moídos',
-          },
-        ]}
-      />
-      <CoffeeCard
-        coffeeCardInfo={[
-          {
-            img: expresso,
-            coffeeType: ['TRADICIONAL'],
-            coffeeName: 'Expresso Tradicional',
-            coffeeDescription:
-              'O tradicional café feito com água quente e grãos moídos',
-          },
-        ]}
-      />
-      <CoffeeCard
-        coffeeCardInfo={[
-          {
-            img: expresso,
-            coffeeType: ['TRADICIONAL'],
-            coffeeName: 'Expresso Tradicional',
-            coffeeDescription:
-              'O tradicional café feito com água quente e grãos moídos',
-          },
-        ]}
-      />
-      <CoffeeCard
-        coffeeCardInfo={[
-          {
-            img: expresso,
-            coffeeType: ['TRADICIONAL'],
-            coffeeName: 'Expresso Tradicional',
-            coffeeDescription:
-              'O tradicional café feito com água quente e grãos moídos',
-          },
-        ]}
-      />
-      <CoffeeCard
-        coffeeCardInfo={[
-          {
-            img: expresso,
-            coffeeType: ['TRADICIONAL'],
-            coffeeName: 'Expresso Tradicional',
-            coffeeDescription:
-              'O tradicional café feito com água quente e grãos moídos',
-          },
-        ]}
-      />
-      <CoffeeCard
-        coffeeCardInfo={[
-          {
-            img: expresso,
-            coffeeType: ['TRADICIONAL'],
-            coffeeName: 'Expresso Tradicional',
-            coffeeDescription:
-              'O tradicional café feito com água quente e grãos moídos',
-          },
-        ]}
-      />
-      <CoffeeCard
-        coffeeCardInfo={[
-          {
-            img: expresso,
-            coffeeType: ['TRADICIONAL'],
-            coffeeName: 'Expresso Tradicional',
-            coffeeDescription:
-              'O tradicional café feito com água quente e grãos moídos',
-          },
-        ]}
-      />
-      <CoffeeCard
-        coffeeCardInfo={[
-          {
-            img: expresso,
-            coffeeType: ['TRADICIONAL'],
-            coffeeName: 'Expresso Tradicional',
-            coffeeDescription:
-              'O tradicional café feito com água quente e grãos moídos',
-          },
-        ]}
-      />
-      <CoffeeCard
-        coffeeCardInfo={[
-          {
-            img: expresso,
-            coffeeType: ['TRADICIONAL'],
-            coffeeName: 'Expresso Tradicional',
-            coffeeDescription:
-              'O tradicional café feito com água quente e grãos moídos',
-          },
-        ]}
-      />
-      <CoffeeCard
-        coffeeCardInfo={[
-          {
-            img: expresso,
-            coffeeType: ['TRADICIONAL'],
-            coffeeName: 'Expresso Tradicional',
-            coffeeDescription:
-              'O tradicional café feito com água quente e grãos moídos',
-          },
-        ]}
-      />
+        <CoffeeCard
+          coffeeCardInfo={[
+            {
+              img: expresso,
+              coffeeType: ['TRADICIONAL', 'GELADO'],
+              coffeeName: 'Expresso Tradicional',
+              coffeeDescription:
+                'O tradicional café feito com água quente e grãos moídos',
+            },
+          ]}
+        />
+        <CoffeeCard
+          coffeeCardInfo={[
+            {
+              img: expresso,
+              coffeeType: ['TRADICIONAL'],
+              coffeeName: 'Expresso Tradicional',
+              coffeeDescription:
+                'O tradicional café feito com água quente e grãos moídos',
+            },
+          ]}
+        />
+        <CoffeeCard
+          coffeeCardInfo={[
+            {
+              img: expresso,
+              coffeeType: ['TRADICIONAL'],
+              coffeeName: 'Expresso Tradicional',
+              coffeeDescription:
+                'O tradicional café feito com água quente e grãos moídos',
+            },
+          ]}
+        />
+        <CoffeeCard
+          coffeeCardInfo={[
+            {
+              img: expresso,
+              coffeeType: ['TRADICIONAL'],
+              coffeeName: 'Expresso Tradicional',
+              coffeeDescription:
+                'O tradicional café feito com água quente e grãos moídos',
+            },
+          ]}
+        />
+        <CoffeeCard
+          coffeeCardInfo={[
+            {
+              img: expresso,
+              coffeeType: ['TRADICIONAL'],
+              coffeeName: 'Expresso Tradicional',
+              coffeeDescription:
+                'O tradicional café feito com água quente e grãos moídos',
+            },
+          ]}
+        />
+        <CoffeeCard
+          coffeeCardInfo={[
+            {
+              img: expresso,
+              coffeeType: ['TRADICIONAL'],
+              coffeeName: 'Expresso Tradicional',
+              coffeeDescription:
+                'O tradicional café feito com água quente e grãos moídos',
+            },
+          ]}
+        />
+        <CoffeeCard
+          coffeeCardInfo={[
+            {
+              img: expresso,
+              coffeeType: ['TRADICIONAL'],
+              coffeeName: 'Expresso Tradicional',
+              coffeeDescription:
+                'O tradicional café feito com água quente e grãos moídos',
+            },
+          ]}
+        />
+        <CoffeeCard
+          coffeeCardInfo={[
+            {
+              img: expresso,
+              coffeeType: ['TRADICIONAL'],
+              coffeeName: 'Expresso Tradicional',
+              coffeeDescription:
+                'O tradicional café feito com água quente e grãos moídos',
+            },
+          ]}
+        />
+        <CoffeeCard
+          coffeeCardInfo={[
+            {
+              img: expresso,
+              coffeeType: ['TRADICIONAL'],
+              coffeeName: 'Expresso Tradicional',
+              coffeeDescription:
+                'O tradicional café feito com água quente e grãos moídos',
+            },
+          ]}
+        />
+        <CoffeeCard
+          coffeeCardInfo={[
+            {
+              img: expresso,
+              coffeeType: ['TRADICIONAL'],
+              coffeeName: 'Expresso Tradicional',
+              coffeeDescription:
+                'O tradicional café feito com água quente e grãos moídos',
+            },
+          ]}
+        />
+        <CoffeeCard
+          coffeeCardInfo={[
+            {
+              img: expresso,
+              coffeeType: ['TRADICIONAL'],
+              coffeeName: 'Expresso Tradicional',
+              coffeeDescription:
+                'O tradicional café feito com água quente e grãos moídos',
+            },
+          ]}
+        />
+        <CoffeeCard
+          coffeeCardInfo={[
+            {
+              img: expresso,
+              coffeeType: ['TRADICIONAL'],
+              coffeeName: 'Expresso Tradicional',
+              coffeeDescription:
+                'O tradicional café feito com água quente e grãos moídos',
+            },
+          ]}
+        />
+        <CoffeeCard
+          coffeeCardInfo={[
+            {
+              img: expresso,
+              coffeeType: ['TRADICIONAL'],
+              coffeeName: 'Expresso Tradicional',
+              coffeeDescription:
+                'O tradicional café feito com água quente e grãos moídos',
+            },
+          ]}
+        />
+        <CoffeeCard
+          coffeeCardInfo={[
+            {
+              img: expresso,
+              coffeeType: ['TRADICIONAL'],
+              coffeeName: 'Expresso Tradicional',
+              coffeeDescription:
+                'O tradicional café feito com água quente e grãos moídos',
+            },
+          ]}
+        />
       </CoffeeList>
     </BodyComponent>
   )

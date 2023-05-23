@@ -1,6 +1,11 @@
 import { useState } from 'react'
 import { Cart } from '../../Pages/Cart'
-import { CardCategory, CardImage, CoffeeCardContainer } from './styles'
+import {
+  CardCategory,
+  CardCategoryDiv,
+  CardImage,
+  CoffeeCardContainer,
+} from './styles'
 
 interface CoffeeCardProps {
   img: string
@@ -16,23 +21,23 @@ interface Props {
 export const CoffeeCard = ({ coffeeCardInfo }: Props) => {
   const [coffeeCount, setCoffeeCount] = useState(1)
 
-  function coffeeCategoryGenerator () {
-    const test:any = coffeeCardInfo.map((coffee) => {
-      const coffeeType = coffee.coffeeType
-      const coffeeTypeGenerated = ({coffeeType}) => (
-        coffeeType.map(type => (
-          <CardCategory>{type.coffeeType}</CardCategory>
-        )
-      )
-    })
-    return test
-  }
+  // function coffeeCategoryRender(props: CoffeeCardProps) {
+  //   const category = [props.coffeeType]
+  //   return category.map((item, index) => {
+  //     ;<CardCategory key={index}>{item}</CardCategory>
+  //   })
+  // }
+
   return (
     <CoffeeCardContainer>
       {coffeeCardInfo.map((coffee, index) => (
         <div key={index}>
           <CardImage src={coffee.img} alt="Coffee Image" />
-          {coffeeCategoryGenerator()}
+          <CardCategoryDiv>
+            {coffee.coffeeType.map((item, index) => {
+              return <CardCategory key={index}>{item}</CardCategory>
+            })}
+          </CardCategoryDiv>
           <h1>{coffee.coffeeName}</h1>
           <p>{coffee.coffeeDescription}</p>
           <footer>
