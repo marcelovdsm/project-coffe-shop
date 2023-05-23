@@ -1,11 +1,14 @@
 import { useState } from 'react'
-import { Cart } from '../../Pages/Cart'
 import {
   CardCategory,
   CardCategoryDiv,
+  CardDescription,
+  CardFooter,
   CardImage,
+  CardTitle,
   CoffeeCardContainer,
 } from './styles'
+import { ShoppingCartSimple } from 'phosphor-react'
 
 interface CoffeeCardProps {
   img: string
@@ -38,9 +41,9 @@ export const CoffeeCard = ({ coffeeCardInfo }: Props) => {
               return <CardCategory key={index}>{item}</CardCategory>
             })}
           </CardCategoryDiv>
-          <h1>{coffee.coffeeName}</h1>
-          <p>{coffee.coffeeDescription}</p>
-          <footer>
+          <CardTitle>{coffee.coffeeName}</CardTitle>
+          <CardDescription>{coffee.coffeeDescription}</CardDescription>
+          <CardFooter>
             <p>
               <span>R$</span>9,99
             </p>
@@ -54,9 +57,9 @@ export const CoffeeCard = ({ coffeeCardInfo }: Props) => {
               onChange={(e) => setCoffeeCount(Number(e.target.value))}
             />
             <p>
-              <Cart />
+              <ShoppingCartSimple size={22} weight="fill" />
             </p>
-          </footer>
+          </CardFooter>
         </div>
       ))}
     </CoffeeCardContainer>

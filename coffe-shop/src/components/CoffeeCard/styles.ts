@@ -33,3 +33,43 @@ export const CardCategoryDiv = styled.div`
   gap: 0.25rem;
   justify-content: center;
 `
+
+export const CardTitle = styled.h1`
+  font-family: 'Baloo 2';
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.625rem;
+  text-align: center;
+  color: ${(props) => props.theme.baseSubtitle};
+  margin: 1rem 1.25rem 0.5rem 1.25rem;
+`
+
+export const CardDescription = styled.p`
+  font-family: 'Roboto';
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.1375rem;
+  text-align: center;
+  color: ${(props) => props.theme.baseLabel};
+  margin-bottom: 2.0625rem;
+`
+
+export const CardFooter = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  gap: 29px;
+  margin: 0 1.5rem 1.5rem 1.25rem;
+  p:first-child {
+  }
+
+  p:last-child {
+    background-color: ${(props) => props.theme.purpleDark};
+    color: #fff;
+    padding: 0.5rem;
+    border-radius: 6px;
+    margin-bottom: 1.25rem;
+  }
+`
