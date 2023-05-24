@@ -92,6 +92,7 @@ export const CoffeeListHeader = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 3.5rem 10rem 0 10rem;
+  max-width: 90rem;
 
   h2 {
     font-family: 'Baloo 2', sans-serif;

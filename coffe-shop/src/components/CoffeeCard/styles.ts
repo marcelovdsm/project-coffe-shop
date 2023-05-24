@@ -73,3 +73,15 @@ export const CardFooter = styled.div`
     margin-bottom: 1.25rem;
   }
 `
+
+export const Price = styled.p`
+  font-family: 'Baloo 2', sans-serif;
+  font-weight: 800;
+  font-size: 1.5rem;
+  color: ${props => props.theme.baseText};
+`
+
+export const PricePrefix = styled.span`
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.875rem;
+`

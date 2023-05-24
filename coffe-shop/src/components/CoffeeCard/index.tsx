@@ -7,8 +7,11 @@ import {
   CardImage,
   CardTitle,
   CoffeeCardContainer,
+  Price,
+  PricePrefix,
 } from './styles'
 import { ShoppingCartSimple } from 'phosphor-react'
+import { CardCoffeeNumber } from '../CardCoffeeNumber'
 
 interface CoffeeCardProps {
   img: string
@@ -24,13 +27,6 @@ interface Props {
 export const CoffeeCard = ({ coffeeCardInfo }: Props) => {
   const [coffeeCount, setCoffeeCount] = useState(1)
 
-  // function coffeeCategoryRender(props: CoffeeCardProps) {
-  //   const category = [props.coffeeType]
-  //   return category.map((item, index) => {
-  //     ;<CardCategory key={index}>{item}</CardCategory>
-  //   })
-  // }
-
   return (
     <CoffeeCardContainer>
       {coffeeCardInfo.map((coffee, index) => (
@@ -44,18 +40,10 @@ export const CoffeeCard = ({ coffeeCardInfo }: Props) => {
           <CardTitle>{coffee.coffeeName}</CardTitle>
           <CardDescription>{coffee.coffeeDescription}</CardDescription>
           <CardFooter>
-            <p>
-              <span>R$</span>9,99
-            </p>
-            <input
-              type="number"
-              id="coffeeCount"
-              placeholder="1"
-              min={1}
-              max={9}
-              value={coffeeCount}
-              onChange={(e) => setCoffeeCount(Number(e.target.value))}
-            />
+            <Price>
+              <PricePrefix>R$</PricePrefix>9,99
+            </Price>
+            <CardCoffeeNumber/>
             <p>
               <ShoppingCartSimple size={22} weight="fill" />
             </p>
