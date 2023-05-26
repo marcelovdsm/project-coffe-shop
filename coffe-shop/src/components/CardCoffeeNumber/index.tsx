@@ -1,13 +1,19 @@
 import { useState } from 'react'
+import { CardNumber } from './styles'
+import { Plus, Minus } from 'phosphor-react'
 
 export const CardCoffeeNumber = () => {
-const [count, setCount] = useState(1)
+  const [count, setCount] = useState(1)
 
-  return(
-    <div>
-      <span onClick={() => setCount(count - 1)}>-</span>
+  return (
+    <CardNumber>
+      <Minus
+        size={16}
+        weight="bold"
+        onClick={() => setCount(count - 1)}
+      ></Minus>
       <span>{count}</span>
-      <span onClick={() => setCount(count + 1)}>+</span>
-    </div>
+      <Plus size={16} weight="bold" onClick={() => setCount(count + 1)}></Plus>
+    </CardNumber>
   )
 }

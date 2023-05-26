@@ -13,6 +13,19 @@ import {
   CoffeeListHeader,
 } from './styles'
 import expresso from '../../assets/expresso.png'
+import americano from '../../assets/americano.png'
+import expressoCremoso from '../../assets/expresso-cremoso.png'
+import expressoGelado from '../../assets/cafe-gelado.png'
+import cafeComLeite from '../../assets/cafe-com-leite.png'
+import latte from '../../assets/latte.png'
+import capuccino from '../../assets/capuccino.png'
+import macchiato from '../../assets/macchiato.png'
+import mocaccino from '../../assets/mochaccino.png'
+import chocolateQuente from '../../assets/chocolate-quente.png'
+import cubano from '../../assets/cubano.png'
+import havaiano from '../../assets/havaiano.png'
+import arabe from '../../assets/arabe.png'
+import irlandes from '../../assets/irlandes.png'
 import CoffeIntroImage from '../../assets/coffe-intro.jpg'
 import { Coffee, Package, ShoppingCart, Timer } from 'phosphor-react'
 import { CoffeeCard } from '../../components/CoffeeCard'
@@ -79,17 +92,6 @@ export const Home = () => {
           coffeeCardInfo={[
             {
               img: expresso,
-              coffeeType: ['TRADICIONAL', 'GELADO'],
-              coffeeName: 'Expresso Tradicional',
-              coffeeDescription:
-                'O tradicional café feito com água quente e grãos moídos',
-            },
-          ]}
-        />
-        <CoffeeCard
-          coffeeCardInfo={[
-            {
-              img: expresso,
               coffeeType: ['TRADICIONAL'],
               coffeeName: 'Expresso Tradicional',
               coffeeDescription:
@@ -100,7 +102,18 @@ export const Home = () => {
         <CoffeeCard
           coffeeCardInfo={[
             {
-              img: expresso,
+              img: americano,
+              coffeeType: ['TRADICIONAL'],
+              coffeeName: 'Expresso Americano',
+              coffeeDescription:
+                'Expresso diluído, menos intenso que o tradicional',
+            },
+          ]}
+        />
+        <CoffeeCard
+          coffeeCardInfo={[
+            {
+              img: expressoCremoso,
               coffeeType: ['TRADICIONAL'],
               coffeeName: 'Expresso Tradicional',
               coffeeDescription:
@@ -111,7 +124,7 @@ export const Home = () => {
         <CoffeeCard
           coffeeCardInfo={[
             {
-              img: expresso,
+              img: expressoGelado,
               coffeeType: ['TRADICIONAL'],
               coffeeName: 'Expresso Tradicional',
               coffeeDescription:
@@ -122,7 +135,7 @@ export const Home = () => {
         <CoffeeCard
           coffeeCardInfo={[
             {
-              img: expresso,
+              img: cafeComLeite,
               coffeeType: ['TRADICIONAL'],
               coffeeName: 'Expresso Tradicional',
               coffeeDescription:
@@ -133,7 +146,7 @@ export const Home = () => {
         <CoffeeCard
           coffeeCardInfo={[
             {
-              img: expresso,
+              img: latte,
               coffeeType: ['TRADICIONAL'],
               coffeeName: 'Expresso Tradicional',
               coffeeDescription:
@@ -144,7 +157,7 @@ export const Home = () => {
         <CoffeeCard
           coffeeCardInfo={[
             {
-              img: expresso,
+              img: capuccino,
               coffeeType: ['TRADICIONAL'],
               coffeeName: 'Expresso Tradicional',
               coffeeDescription:
@@ -155,7 +168,7 @@ export const Home = () => {
         <CoffeeCard
           coffeeCardInfo={[
             {
-              img: expresso,
+              img: macchiato,
               coffeeType: ['TRADICIONAL'],
               coffeeName: 'Expresso Tradicional',
               coffeeDescription:
@@ -166,7 +179,7 @@ export const Home = () => {
         <CoffeeCard
           coffeeCardInfo={[
             {
-              img: expresso,
+              img: mocaccino,
               coffeeType: ['TRADICIONAL'],
               coffeeName: 'Expresso Tradicional',
               coffeeDescription:
@@ -177,7 +190,7 @@ export const Home = () => {
         <CoffeeCard
           coffeeCardInfo={[
             {
-              img: expresso,
+              img: chocolateQuente,
               coffeeType: ['TRADICIONAL'],
               coffeeName: 'Expresso Tradicional',
               coffeeDescription:
@@ -188,7 +201,7 @@ export const Home = () => {
         <CoffeeCard
           coffeeCardInfo={[
             {
-              img: expresso,
+              img: cubano,
               coffeeType: ['TRADICIONAL'],
               coffeeName: 'Expresso Tradicional',
               coffeeDescription:
@@ -199,7 +212,7 @@ export const Home = () => {
         <CoffeeCard
           coffeeCardInfo={[
             {
-              img: expresso,
+              img: havaiano,
               coffeeType: ['TRADICIONAL'],
               coffeeName: 'Expresso Tradicional',
               coffeeDescription:
@@ -210,7 +223,7 @@ export const Home = () => {
         <CoffeeCard
           coffeeCardInfo={[
             {
-              img: expresso,
+              img: arabe,
               coffeeType: ['TRADICIONAL'],
               coffeeName: 'Expresso Tradicional',
               coffeeDescription:
@@ -221,7 +234,7 @@ export const Home = () => {
         <CoffeeCard
           coffeeCardInfo={[
             {
-              img: expresso,
+              img: irlandes,
               coffeeType: ['TRADICIONAL'],
               coffeeName: 'Expresso Tradicional',
               coffeeDescription:

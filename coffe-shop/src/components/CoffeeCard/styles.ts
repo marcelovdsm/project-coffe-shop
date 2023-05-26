@@ -45,13 +45,15 @@ export const CardTitle = styled.h1`
 `
 
 export const CardDescription = styled.p`
+  max-width: 13.5rem;
+  display: flex;
+  flex-wrap: wrap;
   font-family: 'Roboto';
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.1375rem;
   text-align: center;
   color: ${(props) => props.theme.baseLabel};
-  margin-bottom: 2.0625rem;
 `
 
 export const CardFooter = styled.div`
@@ -61,11 +63,12 @@ export const CardFooter = styled.div`
   align-items: center;
   padding: 0px;
   gap: 29px;
-  margin: 0 1.5rem 1.5rem 1.25rem;
+  margin: 2.0625rem 1.5rem 1.5rem 1.25rem;
   p:first-child {
   }
 
   p:last-child {
+    display: flex;
     background-color: ${(props) => props.theme.purpleDark};
     color: #fff;
     padding: 0.5rem;
@@ -78,7 +81,8 @@ export const Price = styled.p`
   font-family: 'Baloo 2', sans-serif;
   font-weight: 800;
   font-size: 1.5rem;
-  color: ${props => props.theme.baseText};
+  color: ${(props) => props.theme.baseText};
+  margin-bottom: 1.25rem;
 `
 
 export const PricePrefix = styled.span`

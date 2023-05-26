@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import {
   CardCategory,
   CardCategoryDiv,
@@ -25,8 +24,6 @@ interface Props {
 }
 
 export const CoffeeCard = ({ coffeeCardInfo }: Props) => {
-  const [coffeeCount, setCoffeeCount] = useState(1)
-
   return (
     <CoffeeCardContainer>
       {coffeeCardInfo.map((coffee, index) => (
@@ -43,7 +40,7 @@ export const CoffeeCard = ({ coffeeCardInfo }: Props) => {
             <Price>
               <PricePrefix>R$</PricePrefix>9,99
             </Price>
-            <CardCoffeeNumber/>
+            <CardCoffeeNumber />
             <p>
               <ShoppingCartSimple size={22} weight="fill" />
             </p>
