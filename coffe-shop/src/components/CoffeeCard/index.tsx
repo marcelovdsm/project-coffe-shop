@@ -35,7 +35,9 @@ export const CoffeeCard = ({ coffeeCardInfo }: Props) => {
             })}
           </CardCategoryDiv>
           <CardTitle>{coffee.coffeeName}</CardTitle>
-          <CardDescription>{coffee.coffeeDescription}</CardDescription>
+          <CardDescription>
+            <div>{coffee.coffeeDescription}</div>
+          </CardDescription>
           <CardFooter>
             <Price>
               <PricePrefix>R$</PricePrefix>9,99

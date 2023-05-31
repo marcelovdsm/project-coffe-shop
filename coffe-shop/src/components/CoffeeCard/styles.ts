@@ -46,8 +46,8 @@ export const CardTitle = styled.h1`
 
 export const CardDescription = styled.p`
   max-width: 13.5rem;
+  margin: auto;
   display: flex;
-  flex-wrap: wrap;
   font-family: 'Roboto';
   font-size: 0.875rem;
   font-weight: 400;
