@@ -12,4 +12,12 @@ export const CardNumber = styled.div`
   background-color: ${(props) => props.theme.baseButton};
   border-radius: 6px;
   margin-bottom: 1.25rem;
+
+  > :first-child {
+    color: ${(props) => props.theme.purple};
+  }
+
+  > :last-child {
+    color: ${(props) => props.theme.purple};
+  }
 `
