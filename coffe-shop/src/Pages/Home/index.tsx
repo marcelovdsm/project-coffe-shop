@@ -31,6 +31,103 @@ import { Coffee, Package, ShoppingCart, Timer } from 'phosphor-react'
 import { CoffeeCard } from '../../components/CoffeeCard'
 
 export const Home = () => {
+  const coffeeList = [
+    {
+      img: expresso,
+      coffeeType: ['TRADICIONAL', 'QUENTE'],
+      coffeeName: 'Expresso Tradicional',
+      coffeeDescription:
+        'O tradicional café feito com água quente e grãos moídos',
+    },
+    {
+      img: americano,
+      coffeeType: ['TRADICIONAL', 'QUENTE'],
+      coffeeName: 'Expresso Americano',
+      coffeeDescription: 'Expresso diluído, menos intenso que o tradicional',
+    },
+    {
+      img: expressoCremoso,
+      coffeeType: ['TRADICIONAL', 'QUENTE'],
+      coffeeName: 'Expresso Cremoso',
+      coffeeDescription: 'Café expresso tradicional com espuma cremosa',
+    },
+    {
+      img: expressoGelado,
+      coffeeType: ['TRADICIONAL', 'GELADO'],
+      coffeeName: 'Expresso Gelado',
+      coffeeDescription: 'Bebida preparada com café expresso e cubos de gelo',
+    },
+    {
+      img: cafeComLeite,
+      coffeeType: ['TRADICIONAL', 'COM LEITE', 'QUENTE'],
+      coffeeName: 'Café com leite',
+      coffeeDescription:
+        'Meio a meio de expresso tradicional com leite vaporizado',
+    },
+    {
+      img: latte,
+      coffeeType: ['TRADICIONAL', 'COM LEITE', 'QUENTE'],
+      coffeeName: 'Latte',
+      coffeeDescription:
+        'Uma dose de café expresso com o dobro de leite e espuma cremosa',
+    },
+    {
+      img: capuccino,
+      coffeeType: ['TRADICIONAL', 'COM LEITE', 'QUENTE'],
+      coffeeName: 'Capuccino',
+      coffeeDescription:
+        'Bebida com canela feita de doses iguais de café, leite e espuma',
+    },
+    {
+      img: macchiato,
+      coffeeType: ['TRADICIONAL', 'COM LEITE', 'QUENTE'],
+      coffeeName: 'Macchiato',
+      coffeeDescription:
+        'Café expresso misturado com um pouco de leite quente e espuma',
+    },
+    {
+      img: mocaccino,
+      coffeeType: ['TRADICIONAL', 'COM LEITE', 'QUENTE'],
+      coffeeName: 'Mocaccino',
+      coffeeDescription:
+        'Café expresso com calda de chocolate, pouco leite e espuma',
+    },
+    {
+      img: chocolateQuente,
+      coffeeType: ['ESPECIAL', 'COM LEITE', 'QUENTE'],
+      coffeeName: 'Chocolate Quente',
+      coffeeDescription:
+        'Bebida feita com chocolate dissolvido no leite quente e café',
+    },
+    {
+      img: cubano,
+      coffeeType: ['ESPECIAL', 'ALCOÓLICO', 'GELADO'],
+      coffeeName: 'Expresso Tradicional',
+      coffeeDescription:
+        'O tradicional café feito com água quente e grãos moídos',
+    },
+    {
+      img: havaiano,
+      coffeeType: ['ESPECIAL', 'QUENTE'],
+      coffeeName: 'Expresso Tradicional',
+      coffeeDescription: 'Bebida adocicada preparada com café e leite de coco',
+    },
+    {
+      img: arabe,
+      coffeeType: ['ESPECIAL', 'QUENTE'],
+      coffeeName: 'Árabe',
+      coffeeDescription:
+        'Bebida preparada com grãos de café árabe e especiarias',
+    },
+    {
+      img: irlandes,
+      coffeeType: ['ESPECIAL', 'ALCOÓLICO', 'QUENTE'],
+      coffeeName: 'Irlandês',
+      coffeeDescription:
+        'Bebida a base de café, uísque irlandês, açúcar e chantilly',
+    },
+  ]
+
   return (
     <BodyComponent>
       <Intro>
@@ -88,159 +185,17 @@ export const Home = () => {
       </CoffeeListHeader>
 
       <CoffeeList>
-        <CoffeeCard
-          coffeeCardInfo={[
-            {
-              img: expresso,
-              coffeeType: ['TRADICIONAL', 'QUENTE'],
-              coffeeName: 'Expresso Tradicional',
-              coffeeDescription:
-                'O tradicional café feito com água quente e grãos moídos',
-            },
-          ]}
-        />
-        <CoffeeCard
-          coffeeCardInfo={[
-            {
-              img: americano,
-              coffeeType: ['TRADICIONAL', 'QUENTE'],
-              coffeeName: 'Expresso Americano',
-              coffeeDescription:
-                'Expresso diluído, menos intenso que o tradicional',
-            },
-          ]}
-        />
-        <CoffeeCard
-          coffeeCardInfo={[
-            {
-              img: expressoCremoso,
-              coffeeType: ['TRADICIONAL', 'QUENTE'],
-              coffeeName: 'Expresso Cremoso',
-              coffeeDescription: 'Café expresso tradicional com espuma cremosa',
-            },
-          ]}
-        />
-        <CoffeeCard
-          coffeeCardInfo={[
-            {
-              img: expressoGelado,
-              coffeeType: ['TRADICIONAL', 'GELADO'],
-              coffeeName: 'Expresso Gelado',
-              coffeeDescription:
-                'Bebida preparada com café expresso e cubos de gelo',
-            },
-          ]}
-        />
-        <CoffeeCard
-          coffeeCardInfo={[
-            {
-              img: cafeComLeite,
-              coffeeType: ['TRADICIONAL', 'COM LEITE', 'QUENTE'],
-              coffeeName: 'Café com leite',
-              coffeeDescription:
-                'Meio a meio de expresso tradicional com leite vaporizado',
-            },
-          ]}
-        />
-        <CoffeeCard
-          coffeeCardInfo={[
-            {
-              img: latte,
-              coffeeType: ['TRADICIONAL', 'COM LEITE', 'QUENTE'],
-              coffeeName: 'Latte',
-              coffeeDescription:
-                'Uma dose de café expresso com o dobro de leite e espuma cremosa',
-            },
-          ]}
-        />
-        <CoffeeCard
-          coffeeCardInfo={[
-            {
-              img: capuccino,
-              coffeeType: ['TRADICIONAL', 'COM LEITE', 'QUENTE'],
-              coffeeName: 'Capuccino',
-              coffeeDescription:
-                'Bebida com canela feita de doses iguais de café, leite e espuma',
-            },
-          ]}
-        />
-        <CoffeeCard
-          coffeeCardInfo={[
-            {
-              img: macchiato,
-              coffeeType: ['TRADICIONAL', 'COM LEITE', 'QUENTE'],
-              coffeeName: 'Macchiato',
-              coffeeDescription:
-                'Café expresso misturado com um pouco de leite quente e espuma',
-            },
-          ]}
-        />
-        <CoffeeCard
-          coffeeCardInfo={[
-            {
-              img: mocaccino,
-              coffeeType: ['TRADICIONAL', 'COM LEITE', 'QUENTE'],
-              coffeeName: 'Mocaccino',
-              coffeeDescription:
-                'Café expresso com calda de chocolate, pouco leite e espuma',
-            },
-          ]}
-        />
-        <CoffeeCard
-          coffeeCardInfo={[
-            {
-              img: chocolateQuente,
-              coffeeType: ['ESPECIAL', 'COM LEITE', 'QUENTE'],
-              coffeeName: 'Chocolate Quente',
-              coffeeDescription:
-                'Bebida feita com chocolate dissolvido no leite quente e café',
-            },
-          ]}
-        />
-        <CoffeeCard
-          coffeeCardInfo={[
-            {
-              img: cubano,
-              coffeeType: ['ESPECIAL', 'ALCOÓLICO', 'GELADO'],
-              coffeeName: 'Expresso Tradicional',
-              coffeeDescription:
-                'O tradicional café feito com água quente e grãos moídos',
-            },
-          ]}
-        />
-        <CoffeeCard
-          coffeeCardInfo={[
-            {
-              img: havaiano,
-              coffeeType: ['ESPECIAL', 'QUENTE'],
-              coffeeName: 'Expresso Tradicional',
-              coffeeDescription:
-                'Bebida adocicada preparada com café e leite de coco',
-            },
-          ]}
-        />
-        <CoffeeCard
-          coffeeCardInfo={[
-            {
-              img: arabe,
-              coffeeType: ['ESPECIAL', 'QUENTE'],
-              coffeeName: 'Árabe',
-              coffeeDescription:
-                'Bebida preparada com grãos de café árabe e especiarias',
-            },
-          ]}
-        />
-        <CoffeeCard
-          coffeeCardInfo={[
-            {
-              img: irlandes,
-              coffeeType: ['ESPECIAL', 'ALCOÓLICO', 'QUENTE'],
-              coffeeName: 'Irlandês',
-              coffeeDescription:
-                'Bebida a base de café, uísque irlandês, açúcar e chantilly',
-            },
-          ]}
-        />
+        {coffeeList.map((coffeeCard, index) => {
+          return (
+            <CoffeeCard
+              key={index}
+              img={coffeeCard.img}
+              coffeeType={coffeeCard.coffeeType}
+              coffeeName={coffeeCard.coffeeName}
+              coffeeDescription={coffeeCard.coffeeDescription}
+            />
+          )
+        })}
       </CoffeeList>
     </BodyComponent>
   )

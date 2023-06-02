@@ -13,7 +13,7 @@ import { ShoppingCartSimple } from 'phosphor-react'
 import { CardCoffeeNumber } from '../CardCoffeeNumber'
 
 interface CoffeeCardProps {
-  img: string
+  img: HTMLImageElement
   coffeeType: Array<String>
   coffeeName: string
   coffeeDescription: string

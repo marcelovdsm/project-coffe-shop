@@ -18,6 +18,6 @@ export const CardNumber = styled.div`
   }
 
   > :last-child {
-    color: ${(props) => props.theme.purple};
+    color: ${(props) => props.theme.purple};...
   }
 `
