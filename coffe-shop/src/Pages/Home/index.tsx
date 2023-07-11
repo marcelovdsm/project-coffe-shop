@@ -172,15 +172,7 @@ export const Home = () => {
 
       <CoffeeList>
         {coffeeList.map((coffeeCard, index) => {
-          return (
-            <CoffeeCard
-              key={index}
-              img={coffeeCard.img}
-              coffeeType={coffeeCard.coffeeType}
-              coffeeName={coffeeCard.coffeeName}
-              coffeeDescription={coffeeCard.coffeeDescription}
-            />
-          )
+          return <CoffeeCard key={index} coffee={coffeeCard} index={index} />
         })}
       </CoffeeList>
     </BodyComponent>
