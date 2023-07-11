@@ -12,101 +12,117 @@ import {
   Filter,
   CoffeeListHeader,
 } from './styles'
+
 import CoffeIntroImage from '../../assets/coffe-intro.jpg'
+import expresso from '../../assets/expresso.png'
+import americano from '../../assets/americano.png'
+import arabe from '../../assets/arabe.png'
+import cafeComLeite from '../../assets/cafe-com-leite.png'
+import cafeGelado from '../../assets/cafe-gelado.png'
+import capuccino from '../../assets/capuccino.png'
+import chocolateQuente from '../../assets/chocolate-quente.png'
+import cubano from '../../assets/cubano.png'
+import expressoCremoso from '../../assets/expresso-cremoso.png'
+import havaiano from '../../assets/havaiano.png'
+import irlandes from '../../assets/irlandes.png'
+import latte from '../../assets/latte.png'
+import macchiato from '../../assets/macchiato.png'
+import mochaccino from '../../assets/mochaccino.png'
+
 import { Coffee, Package, ShoppingCart, Timer } from 'phosphor-react'
 import { CoffeeCard } from '../../components/CoffeeCard'
 
 export const Home = () => {
   const coffeeList = [
     {
-      img: './../assets/expresso.png',
+      img: expresso,
       coffeeType: ['TRADICIONAL', 'QUENTE'],
       coffeeName: 'Expresso Tradicional',
       coffeeDescription:
         'O tradicional café feito com água quente e grãos moídos',
     },
     {
-      img: '../../assets/americano.png',
+      img: americano,
       coffeeType: ['TRADICIONAL', 'QUENTE'],
       coffeeName: 'Expresso Americano',
       coffeeDescription: 'Expresso diluído, menos intenso que o tradicional',
     },
     {
-      img: '../../assets/expresso-cremoso.png',
+      img: expressoCremoso,
       coffeeType: ['TRADICIONAL', 'QUENTE'],
       coffeeName: 'Expresso Cremoso',
       coffeeDescription: 'Café expresso tradicional com espuma cremosa',
     },
     {
-      img: '../../assets/cafe-gelado.png',
+      img: cafeGelado,
       coffeeType: ['TRADICIONAL', 'GELADO'],
       coffeeName: 'Expresso Gelado',
       coffeeDescription: 'Bebida preparada com café expresso e cubos de gelo',
     },
     {
-      img: '../../assets/cafe-com-leite.png',
+      img: cafeComLeite,
       coffeeType: ['TRADICIONAL', 'COM LEITE', 'QUENTE'],
       coffeeName: 'Café com leite',
       coffeeDescription:
         'Meio a meio de expresso tradicional com leite vaporizado',
     },
     {
-      img: '../../assets/latte.png',
+      img: latte,
       coffeeType: ['TRADICIONAL', 'COM LEITE', 'QUENTE'],
       coffeeName: 'Latte',
       coffeeDescription:
         'Uma dose de café expresso com o dobro de leite e espuma cremosa',
     },
     {
-      img: '../../assets/capuccino.png',
+      img: capuccino,
       coffeeType: ['TRADICIONAL', 'COM LEITE', 'QUENTE'],
       coffeeName: 'Capuccino',
       coffeeDescription:
         'Bebida com canela feita de doses iguais de café, leite e espuma',
     },
     {
-      img: '../../assets/macchiato.png',
+      img: macchiato,
       coffeeType: ['TRADICIONAL', 'COM LEITE', 'QUENTE'],
       coffeeName: 'Macchiato',
       coffeeDescription:
         'Café expresso misturado com um pouco de leite quente e espuma',
     },
     {
-      img: '../../assets/mochaccino.png',
+      img: mochaccino,
       coffeeType: ['TRADICIONAL', 'COM LEITE', 'QUENTE'],
       coffeeName: 'Mocaccino',
       coffeeDescription:
         'Café expresso com calda de chocolate, pouco leite e espuma',
     },
     {
-      img: '../../assets/chocolate-quente.png',
+      img: chocolateQuente,
       coffeeType: ['ESPECIAL', 'COM LEITE', 'QUENTE'],
       coffeeName: 'Chocolate Quente',
       coffeeDescription:
         'Bebida feita com chocolate dissolvido no leite quente e café',
     },
     {
-      img: '../../assets/cubano.png',
+      img: cubano,
       coffeeType: ['ESPECIAL', 'ALCOÓLICO', 'GELADO'],
       coffeeName: 'Expresso Tradicional',
       coffeeDescription:
         'O tradicional café feito com água quente e grãos moídos',
     },
     {
-      img: '../../assets/havaiano.png',
+      img: havaiano,
       coffeeType: ['ESPECIAL', 'QUENTE'],
       coffeeName: 'Expresso Tradicional',
       coffeeDescription: 'Bebida adocicada preparada com café e leite de coco',
     },
     {
-      img: '../../assets/arabe.png',
+      img: arabe,
       coffeeType: ['ESPECIAL', 'QUENTE'],
       coffeeName: 'Árabe',
       coffeeDescription:
         'Bebida preparada com grãos de café árabe e especiarias',
     },
     {
-      img: '../../assets/irlandes.png',
+      img: irlandes,
       coffeeType: ['ESPECIAL', 'ALCOÓLICO', 'QUENTE'],
       coffeeName: 'Irlandês',
       coffeeDescription:

@@ -3,6 +3,7 @@ import styled from 'styled-components'
 export const BodyComponent = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 34.5rem;
 `
 
@@ -93,6 +94,7 @@ export const CoffeeListHeader = styled.div`
   align-items: center;
   padding: 3.5rem 10rem 0 10rem;
   max-width: 90rem;
+  gap: 29rem;
 
   h2 {
     font-family: 'Baloo 2', sans-serif;
