@@ -6,7 +6,11 @@ import {
   CurrencyDollar,
   MapPinLine,
   Money,
+  Trash,
 } from 'phosphor-react'
+
+import expresso from '../../assets/expresso.png'
+import { CardCoffeeNumber } from '../../components/CardCoffeeNumber'
 
 export const Cart = () => {
   // const { register, handleSubmit } = useForm()
@@ -65,7 +69,40 @@ export const Cart = () => {
             </div>
           </form>
           <aside>
-            
+            <div>
+              <img src={expresso} alt="expresso" />
+              <p>Expresso Tradicional</p>
+              <span>R$ 9,90</span>
+              <div>
+                <CardCoffeeNumber />
+                <button>
+                  <Trash size={22} weight="bold" />
+                </button>
+              </div>
+            </div>
+            <div>
+              <img src={expresso} alt="expresso" />
+              <p>Expresso Tradicional</p>
+              <span>R$ 9,90</span>
+              <div>
+                <CardCoffeeNumber />
+                <button>
+                  <Trash size={22} weight="bold" />
+                </button>
+              </div>
+            </div>
+            <div>
+              <p>
+                Total de itens <span>R$ 30,00</span>
+              </p>
+              <p>
+                Entrega <span>R$ 5,00</span>
+              </p>
+              <h3>
+                Total <span>R$ 35,00</span>
+              </h3>
+            </div>
+            <button>CONFIRMAR PEDIDO</button>
           </aside>
         </div>
       </div>
