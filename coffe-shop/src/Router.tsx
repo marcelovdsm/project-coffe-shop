@@ -7,10 +7,10 @@ import { defaultTheme } from './styles/themes/default'
 export const Router = () => {
   return (
     <ThemeProvider theme={defaultTheme}>
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/cart" element={<Cart />} />
-    </Routes>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="cart" element={<Cart />} />
+      </Routes>
     </ThemeProvider>
   )
 }

@@ -130,13 +130,13 @@ export const Home = () => {
     },
   ]
 
-  function filterType(type: Array<String>) {
-    return coffeeList
-      .filter((coffee) => coffee.coffeeType === type)
-      .map((coffeeFiltered, index) => (
-        <CoffeeCard key={index} coffee={coffeeFiltered} index={index} />
-      ))
-  }
+  // function filterType(type: Array<String>) {
+  //   return coffeeList
+  //     .filter((coffee) => coffee.coffeeType === type)
+  //     .map((coffeeFiltered, index) => (
+  //       <CoffeeCard key={index} coffee={coffeeFiltered} index={index} />
+  //     ))
+  // }
 
   return (
     <BodyComponent>
@@ -186,7 +186,7 @@ export const Home = () => {
       <CoffeeListHeader>
         <h2>Nossos cafés</h2>
         <Filter>
-          <span onClick={filterType('TRADICIONAL')}>TRADICIONAL</span>
+          <span>TRADICIONAL</span>
           <span>ESPECIAL</span>
           <span>COM LEITE</span>
           <span>ALCOÓLICO</span>
@@ -194,11 +194,11 @@ export const Home = () => {
         </Filter>
       </CoffeeListHeader>
 
-      {/* <CoffeeList>
+      <CoffeeList>
         {coffeeList.map((coffeeCard, index) => {
           return <CoffeeCard key={index} coffee={coffeeCard} index={index} />
         })}
-      </CoffeeList> */}
+      </CoffeeList>
     </BodyComponent>
   )
 }

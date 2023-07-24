@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const HeaderContainer = styled.header`
   position: fixed;
@@ -7,7 +7,7 @@ export const HeaderContainer = styled.header`
   width: 100%;
   z-index: 999;
   height: 6.5rem;
-  background-color: ${props => props.theme['white']};
+  background-color: ${(props) => props.theme.white};
 
   nav {
     display: flex;
@@ -15,23 +15,23 @@ export const HeaderContainer = styled.header`
     justify-content: space-between;
     padding: 2rem 10rem 2rem 10rem;
     font-size: 1.125rem;
-    aside{
+    aside {
       display: flex;
       flex-direction: row;
       gap: 0.75rem;
       align-items: center;
-      p:first-child{
+      p:first-child {
         display: flex;
         gap: 0.25rem;
         padding: 0.5rem;
-        background-color: ${props => props.theme['purpleLight']};
+        background-color: ${(props) => props.theme.purpleLight};
         border-radius: 6px;
-        color: ${props => props.theme['purpleDark']};
+        color: ${(props) => props.theme.purpleDark};
       }
-      p:last-child{
+      p:last-child a {
         display: flex;
-        background-color: ${props => props.theme['yellowLight']};
-        color: ${props => props.theme['yellowDark']};
+        background-color: ${(props) => props.theme.yellowLight};
+        color: ${(props) => props.theme.yellowDark};
         padding: 0.5rem;
         border-radius: 6px;
       }
@@ -41,5 +41,4 @@ export const HeaderContainer = styled.header`
       }
     }
   }
-
 `
