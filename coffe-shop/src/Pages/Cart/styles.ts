@@ -29,9 +29,9 @@ export const LeftBoxComponent = styled.div`
   align-self: stretch;
   max-width: 35rem;
   max-height: 18.3rem;
-  padding: 2.5rem;
 `
 
 export const RequestComponent = styled.div`
-  
+  background-color: ${(props) => props.theme.baseCard};
+  padding: 2.5rem;
 `

@@ -25,9 +25,11 @@ export const Cart = () => {
         <RequestComponent>
           <Title>Complete seu pedido</Title>
           <MainComponent>
-            <MapPinLine size={22} weight="bold" />
-            <h2>Endereço de Entrega</h2>
-            <p>Informe o endereço onde deseja receber seu pedido</p>
+            <article>
+              <MapPinLine size={22} weight="bold" />
+              <h2>Endereço de Entrega</h2>
+              <p>Informe o endereço onde deseja receber seu pedido</p>
+            </article>
             <form action="">
               <input
                 type="text"
