@@ -5,6 +5,7 @@ import {
   Title,
   RequestComponent,
   LeftBoxComponent,
+  RequestTitleComponent,
 } from './styles'
 import {
   Bank,
@@ -25,11 +26,11 @@ export const Cart = () => {
         <RequestComponent>
           <Title>Complete seu pedido</Title>
           <MainComponent>
-            <article>
-              <MapPinLine size={22} weight="bold" />
+            <RequestTitleComponent>
+              <MapPinLine size={22} />
               <h2>Endereço de Entrega</h2>
               <p>Informe o endereço onde deseja receber seu pedido</p>
-            </article>
+            </RequestTitleComponent>
             <form action="">
               <input
                 type="text"
