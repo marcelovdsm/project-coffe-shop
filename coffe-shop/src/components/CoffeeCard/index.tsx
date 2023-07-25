@@ -11,6 +11,7 @@ import {
 } from './styles'
 import { ShoppingCartSimple } from 'phosphor-react'
 import { CardCoffeeNumber } from '../CardCoffeeNumber'
+import { createContext } from 'react'
 
 interface CoffeeCardProps {
   img: string
@@ -23,6 +24,12 @@ interface CoffeeProps {
   coffee: CoffeeCardProps
   index: number
 }
+
+interface coffeeContextType {
+  coffee: CoffeeCardProps
+}
+
+export const coffeeContext = createContext({} as coffeeContextType)
 
 export const CoffeeCard = ({ coffee, index }: CoffeeProps) => {
   return (
