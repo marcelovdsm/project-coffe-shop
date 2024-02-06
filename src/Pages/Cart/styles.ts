@@ -9,7 +9,18 @@ export const BodyComponent = styled.div`
 
 export const MainComponent = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+
+  input {
+    padding: 0.75rem;
+    border-radius: 4px;
+    border: 1px solid ${props => props.theme.baseLabel};
+    margin: 0 0 0.75rem;
+  }
+`
+
+export const FormComponent = styled.form`
+  display: grid;
 `
 
 export const Title = styled.p`

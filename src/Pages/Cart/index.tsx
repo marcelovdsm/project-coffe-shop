@@ -1,4 +1,4 @@
-// import { useForm } from 'react-hook-form'
+import { useForm } from 'react-hook-form'
 import {
   BodyComponent,
   MainComponent,
@@ -6,6 +6,7 @@ import {
   RequestComponent,
   LeftBoxComponent,
   RequestTitleComponent,
+  FormComponent,
 } from './styles'
 import {
   Bank,
@@ -20,6 +21,9 @@ import expresso from '../../assets/expresso.png'
 import { CardCoffeeNumber } from '../../components/CardCoffeeNumber'
 
 export const Cart = () => {
+
+  const { register, handleSubmit } = useForm()
+
   return (
     <BodyComponent>
       <LeftBoxComponent>
@@ -31,45 +35,50 @@ export const Cart = () => {
               <h2>Endereço de Entrega</h2>
               <p>Informe o endereço onde deseja receber seu pedido</p>
             </RequestTitleComponent>
-            <form action="">
+            <FormComponent action="">
               <input
                 type="text"
-                name="cep"
                 id="cep"
                 pattern="[0-9]"
                 placeholder="CEP"
+                {...register('cep')}
               />
               <input type="text" name="Rua" id="rua" placeholder="Rua" />
               <input
                 type="text"
-                name="Número"
                 id="numero"
                 placeholder="Número"
+                {...register('numero')}
+
               />
               <input
                 type="text"
-                name="Complemento"
                 id="complemento"
                 placeholder="Complemento"
+                {...register('complemento')}
+
               />
               <input
                 type="text"
-                name="Bairro"
                 id="bairro"
                 placeholder="Bairro"
+                {...register('bairro')}
+
               />
               <input
                 type="text"
-                name="Cidade"
                 id="cidade"
                 placeholder="Cidade"
+                {...register('cidade')}
+
               />
               <input
                 type="text"
-                name="UF"
                 id="uf"
                 placeholder="UF"
                 maxLength={2}
+                {...register('uf')}
+
               />
               <div>
                 <CurrencyDollar size={22} weight="bold" />
@@ -91,7 +100,7 @@ export const Cart = () => {
                   DINHEIRO
                 </button>
               </div>
-            </form>
+            </FormComponent>
           </MainComponent>
         </RequestComponent>
       </LeftBoxComponent>
